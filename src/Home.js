@@ -4,7 +4,7 @@ import Background from './images/background.jpg'
 import Mercedes from './images/mercedes.jpeg'
 import Audi from './images/audi.jpeg'
 import BMW from './images/BMW.jpg'
-import Link from 'react-router-dom';
+
 import {Row,Button,Col,Container,Nav,Navbar,Card,NavDropdown} from 'react-bootstrap'
 
 
@@ -18,9 +18,9 @@ return(
      
       <Nav.Link href="#home">Home</Nav.Link>
             <NavDropdown title="List of Products" id="navbarScrollingDropdown">
-          <NavDropdown.Item href="#action3"> Mercedes</NavDropdown.Item>
-          <NavDropdown.Item href="#action4"> Audi</NavDropdown.Item>
-          <NavDropdown.Item href="#action4">BMW </NavDropdown.Item>
+          <NavDropdown.Item href="http://localhost:3000/C_info"> Mercedes</NavDropdown.Item>
+          <NavDropdown.Item href="http://localhost:3000/Caudi"> Audi</NavDropdown.Item>
+          <NavDropdown.Item href="http://localhost:3000/Cbmw">BMW </NavDropdown.Item>
      </NavDropdown>
     </Nav>
     </Container>
@@ -33,12 +33,12 @@ return(
   
   <Container>
   <Row>
-    <Col><Card style={{ width: '18rem'}}>
+    <Col><Card style={{ width: '18rem'}}>  
   <Card.Img variant="top" src={Mercedes} />
   <Card.Body>
     <Card.Title>Mercedes</Card.Title>
     <Card.Text>
-    Rs.44.00 - 48.10 Lakh*</Card.Text> 
+     Rs.44.00 - 48.10 Lakh*</Card.Text> 
    
   <Button onClick={event =>  window.location.href='./C_info'} > know more</Button>    
  </Card.Body>
